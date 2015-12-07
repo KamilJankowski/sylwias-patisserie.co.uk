@@ -1,0 +1,10 @@
+
+body{
+background-image: url(rafaello.jpg);
+background-size: cover;
+}
+
+.navbar-default{
+background:none;
+border:none;
+}
