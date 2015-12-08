@@ -13,8 +13,23 @@ background:none;
 border:none;
 }
 
+.navbar{
+ margin:0;
+ padding:0;
+ width: 100%;
+ position: fixed;
+ top:0;
+ display:block;
+ z-index:3;
+}
+
+.navbar .container .navbar-header .navbar-brand img{
+margin-top:8%;
+margin-left:5%;
+}
+
 .ribbon:after, .ribbon:before {
-    margin-top:0.9em;
+    margin-top:8.3em;
     content: "";
     float:left;
     border:1.9em solid #dd4e28;
@@ -22,6 +37,7 @@ border:none;
 
 .ribbon:after {
     border-right-color:transparent;
+	
 }
 
 .ribbon:before {
@@ -33,16 +49,16 @@ border:none;
     color:#fff;
     text-decoration:none;
     float:left;
-    height:5.5em;
+    height:12.5em;
     overflow:hidden;
 }
 
 .ribbon span {
     background:#dd4e28;
     display:inline-block;
-    line-height:2em;
+    line-height:1.8em;
     padding:0 1em;
-    margin-top:0.5em;
+    margin-top:3.5em;
     position:relative;
 	font-family: tangerine;
 	font-size:30px;
@@ -52,6 +68,7 @@ border:none;
     -ms-transition: background-color 0.2s, text-shadow 0.2s;  /* IE10 */
     -o-transition: background-color 0.2s, text-shadow 0.2s;  /* Opera 10.5+ */
     transition: background-color 0.2s, text-shadow 0.2s;
+	float:left;
 }
 
 .ribbon a:hover span {
