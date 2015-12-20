@@ -3,6 +3,11 @@ font-family: tangerine;
 src: url(../fonts/Tangerine_Bold.ttf);
 }
 
+@font-face{
+font-family: YanoneKaffeesatz;
+src: url(../fonts/YanoneKaffeesatz-ExtraLight.ttf);
+}
+
 body{
 background-image: url(rafaello.jpg);
 background-size: cover;
@@ -13,7 +18,40 @@ background:none;
 border:none;
 }
 
-.navbar{
+input, textarea{
+font-size:22px !important;
+line-height:30px !important;
+margin-bottom:5%;
+font-family: YanoneKaffeesatz;
+color:black;
+}
+
+input:focus, textarea:focus{
+-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75) !important;
+-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75) !important;
+box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75) !important;
+border:1px black;
+}
+
+label{
+font-family: YanoneKaffeesatz;
+color:white;
+font-size:22px;
+}
+
+.btn-default{
+background-color:#2bce1e;
+color:white;
+font-size:22px;
+font-weight:bold;
+-webkit-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 1px 1px 0px rgba(0,0,0,0.75);
+border:none;
+font-family: YanoneKaffeesatz;
+}
+
+nav{
  margin:0;
  padding:0;
  width: 100%;
@@ -21,7 +59,10 @@ border:none;
  top:0;
  display:block;
  z-index:3;
+ float:left;
 }
+
+
 
 .navbar .container .navbar-header .navbar-brand img{
 margin-top:15%;
@@ -97,21 +138,71 @@ margin-left:5%;
 	
 }
 
+#content {
+display:block;
+margin: 0;
+padding: 0;
+}
+
 #carousel-example-generic {
 width: 100%; 
 height: 70%;
 margin: 0 auto;
 float:left;
+padding:20px;
+}
+
+#content .container  .main .row {
+margin-bottom:7%;
+}
+
+#content .container .row div .offer-image{
+width:300px;
+-webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+border-radius:10px;
 
 }
 
+#content .container .row div .offer-image:hover{
+filter: grayscale(100%);
+}
+
+#content .container  .main {
+margin-top: 5%;
+}
+
+#content .container  .main .orange-field{
+width:80%;
+background: rgba(255, 169, 67, 0.8);
+margin-right:auto;
+margin-left:auto;
+border-radius:10px;
+position:relative;
+-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+}
+
+#content .container .main .orange-field form{
+padding-top:5%;
+padding-bottom:5%;
+}
+
+#content .container .main .orange-field form .row{
+margin-bottom: 1%;
+} 
 
 #content .container #carousel-example-generic .carousel-inner .item  img {
  margin-left: auto;
     margin-right: auto;
-	margin-top:25%;
+	margin-top:5%;
 	 border-radius:20px;
 	 width:100%;
+-webkit-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.75);
 }
 
 .carousel-indicators{
@@ -123,7 +214,7 @@ z-index:-1;
 
 .left, .right{
     background-image: none !important;
-	margin-top:25%;
+	margin-top:5%;
 }
 
 .left:hover, .right:hover{
@@ -134,5 +225,5 @@ z-index:-1;
 .item{
  margin: 0 auto;   
  width:100%;
-
+padding:20px;
 }
